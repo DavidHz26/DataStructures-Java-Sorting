@@ -38,9 +38,13 @@ public class Main {
 //        array = qs.quickSort(array, 0, array.length - 1);
 //        qs.printArray(array);
 
+
         System.out.println("HeapSort");
-        HeapSort hs = new HeapSort();
-        array = hs.heapSort(array);
+        HeapSort hs = new HeapSort(array.length);
         hs.printArray(array);
+        array = hs.sort(array);
+        hs.printArray(array);
+
+
     }
 }
